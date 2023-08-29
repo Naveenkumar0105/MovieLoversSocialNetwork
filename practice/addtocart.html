@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 1</title>
+    <script>
+      // Function to add an element to localStorage
+      function addElement1() {
+        var element1 = document.getElementById("myElement1").innerHTML;
+        // var elementHtml = element.outerHTML;
+        localStorage.setItem("elementHtml11", element1);
+      }
+      function addElement2() {
+        var element2 = document.getElementById('myElement2').innerHTML;
+        // var elementHtml = element.outerHTML;
+        localStorage.setItem('elementHtml12', element2);
+      }
+      function addElement3() {
+        var element3 = document.getElementById('myElement3').innerHTML;
+        // var elementHtml = element.outerHTML;
+        localStorage.setItem('elementHtml13', element3);
+      }
+
+
+
+      function removeElement1() {
+        localStorage.removeItem('elementHtml11');
+        alert('Element removed');
+      }
+      function removeElement2() {
+        localStorage.removeItem('elementHtml12');
+        alert('Element removed');
+      }
+      function removeElement3() {
+        localStorage.removeItem('elementHtml13');
+        alert('Element removed');
+      }
+    </script>
+  </head>
+  <body>
+    <div id="myElement1">Pokemon</div>
+    <button onclick="addElement1()">Add Element</button>
+    <button onclick="removeElement1()">Remove Element</button>
+    
+    <div id="myElement2">Greninja</div>
+    <button onclick="addElement2()">Add Element</button>
+    <button onclick="removeElement2()">Remove Element</button>
+    
+    <div id="myElement3">Charizard</div>
+    <button onclick="addElement3()">Add Element</button>
+    <button onclick="removeElement3()">Remove Element</button>
+   
+  </body>
+</html>

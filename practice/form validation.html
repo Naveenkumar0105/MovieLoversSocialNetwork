@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+</body>
+</html>
+
+<script>
+function validateForm() {
+  let name = document.querySelector('#name').value;
+  let email = document.forms["myForm"]["email"].value;
+  let phone = document.forms["myForm"]["phone"].value;
+  let password = document.forms["myForm"]["password"].value;
+  let confirmPassword = document.forms["myForm"]["confirm-password"].value;
+
+  if (name == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+  if (email == "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  if (phone == "") {
+    alert("Phone must be filled out");
+    return false;
+  }
+  if (password == "") {
+    alert("Password must be filled out");
+    return false;
+  }
+  if (confirmPassword == "") {
+    alert("Confirm password must be filled out");
+    return false;
+  }
+  
+  // Validate email using regular expression
+  let emailRegex = /^\S+@\S+\.\S+$/;
+  if (!emailRegex.test(email)) {
+    alert("Invalid email format");
+    return false;
+  }
+  
+  // Validate phone using regular expression
+  let phoneRegex = /^\d{10}$/;
+  if (!phoneRegex.test(phone)) {
+    alert("Invalid phone number format");
+    return false;
+  }
+  
+  // Validate password using regular expression
+  let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+  if (!passwordRegex.test(password)) {
+    alert("Password must contain at least one uppercase letter, one lowercase letter, one number, and be at least 8 characters long");
+    return false;
+  }
+  
+  // Confirm password
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return false;
+  }
+  
+  return true;
+}
+</script>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Practice
+        </title>
+    </head>
+<body>
+    <div class="nav">
+    <ul>
+        <div class="drop">
+             <p>dropdown</p>
+             <div class="content">
+                <a href="#">one</a>
+                <a href="#">one</a>
+                <a href="#">one</a>
+             </div>
+        </div>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+    </ul>
+</div>
+    <style>
+        .drop{
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .content a{
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+        .drop:hover .content {
+            display: block;
+        }
+        
+        ul,a{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 67, 67);
+            color: rgb(0, 255, 217);
+            display: flex;
+            justify-content: right;
+        }
+       li{
+        float: right;
+       }
+       li a{
+        display: block;
+        padding: 5px;
+        /* background-color: aqua; */
+       }
+       li a:hover{
+        background-color: black;
+        color: #f1f1f1;
+       }
+    </style>
+</body>
+    </html>

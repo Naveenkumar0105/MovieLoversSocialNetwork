@@ -1,0 +1,120 @@
+/* Style the body */
+body {
+    background-color: #101010; /* set background color */
+    color: #fff; /* set text color */
+    font-family: Arial, sans-serif; /* set font family */
+    font-size: 16px; /* set font size */
+    line-height: 1.5; /* set line height */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #1a1a1a; /* set background color */
+    padding: 1em; /* add padding to the header */
+    display: flex; /* use flexbox for layout */
+    justify-content: space-between; /* set horizontal alignment to space between */
+    align-items: center; /* set vertical alignment to center */
+  }
+  
+  header h1 {
+    font-size: 2.5em; /* set font size */
+    margin: 0; /* remove margin */
+  }
+  
+  nav ul {
+    display: flex; /* use flexbox for layout */
+    list-style: none; /* remove default list style */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+  }
+  
+  nav li {
+    margin-right: 1em; /* add margin to the right of each list item */
+  }
+  
+  nav a {
+    color: #fff; /* set text color */
+    text-decoration: none; /* remove underline */
+    font-size: 1.2em; /* set font size */
+    transition: all 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  nav a:hover {
+    color: #b70000; /* change text color on hover */
+  }
+  
+  /* Style the main section */
+  main {
+    padding: 2em; /* add padding */
+    display: flex; /* use flexbox for layout */
+    flex-wrap: wrap; /* allow items to wrap to a new line */
+    justify-content: space-between; /* set horizontal alignment to space between */
+  }
+  
+  section {
+    width: 30%; /* set width */
+    margin-bottom: 2em; /* add margin to the bottom */
+  }
+  
+  section h2 {
+    font-size: 2em; /* set font size */
+    margin-top: 0; /* remove margin from the top */
+  }
+  
+  ul {
+    list-style: none; /* remove default list style */
+    margin: 0; /* remove margin */
+    padding: 0; /* remove padding */
+  }
+  
+  li {
+    margin-bottom: 1em; /* add margin to the bottom of each list item */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* add box shadow */
+    overflow: hidden; /* hide overflowing content */
+  }
+  
+  li img {
+    max-width: 100%; /* set maximum width to 100% */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* remove image inline display */
+  }
+  
+  li h3 {
+    margin: 0; /* remove margin */
+    padding: 1em; /* add padding */
+    font-size: 1.2em; /* set font size */
+  }
+  
+  li p {
+    margin: 0; /* remove margin */
+    padding: 1em; /* add padding */
+    font-size: 1.1em; /* set font size */
+    background-color: #b70000; /* set background color */
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #1a1a1a; /* set background color */
+    padding: 1em; /* add padding */
+    text-align: center; /* center text */
+  }
+  
+  footer p {
+    margin: 0; /* remove margin */
+    color: #fff; /* set text color*/
+    font-size: 0.8em;
+}
+
+/* .movie-posters li {
+  width: 200px;
+  height: 300px;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.movie-posters li img {
+  max-width: 130px;
+  max-height: 130px;
+} */

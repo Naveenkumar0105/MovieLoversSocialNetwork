@@ -1,0 +1,23 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin: 0;
+  }
+  

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000000;
+}
+
+.signing{
+    min-height: 60vh;
+    position: absolute;
+}
+
+h1{
+    
+    position: relative;
+    color: #e5ba0d;
+    font-size: 60px;
+    text-transform: uppercase;
+     width: 100%;/*this makes the text to move towards left */
+    text-align: center;/*this again brings bavk to the center*/
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 1em;
+    /* outline: none; */
+    animation: animate 5s linear infinite;
+}
+/* the keyframes rule specifies the animation code */
+@keyframes animate{
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #ffcb05;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #e7f739;
+        text-shadow: 0 0 10px #d8eb08,
+        0 0 20px #d8eb08,
+        0 0 40px #d8eb08,
+        0 0 80px #d8eb08,
+        0 0 160px #d8eb08;
+    }
+}

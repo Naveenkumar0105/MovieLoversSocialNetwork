@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 2</title>
+    <script>
+      // Function to retrieve the element from localStorage and insert it into the page
+      function insertElement() {
+        var elementHtml1 = localStorage.getItem('elementHtml11');
+        var container = document.getElementById('container');
+        container.innerHTML = elementHtml1;
+        if (elementHtml1) {
+          var removeButton = document.createElement('button');
+          removeButton.textContent = 'Remove Element';
+          removeButton.onclick = function() {
+            localStorage.removeItem('elementHtml11');
+            container.innerHTML = '';
+            removeButton.style.display = 'none';
+            alert('Element removed');
+          };
+          container.appendChild(removeButton);
+        }
+
+
+        var elementHtml2 = localStorage.getItem('elementHtml12');
+        var container2 = document.getElementById('container2');
+        container2.innerHTML = elementHtml2;
+        if (elementHtml2) {
+          var removeButton = document.createElement('button');
+          removeButton.textContent = 'Remove Element';
+          removeButton.onclick = function() {
+            localStorage.removeItem('elementHtml12');
+            container2.innerHTML = '';
+            removeButton.style.display = 'none';
+            alert('Element removed');
+          };
+          container2.appendChild(removeButton);
+        }
+
+        var elementHtml3 = localStorage.getItem('elementHtml13');
+        var container3 = document.getElementById('container3');
+        container3.innerHTML = elementHtml3;
+        if (elementHtml3) {
+          var removeButton = document.createElement('button');
+          removeButton.textContent = 'Remove Element';
+          removeButton.onclick = function() {
+            localStorage.removeItem('elementHtml13');
+            container3.innerHTML = '';
+            removeButton.style.display = 'none';
+            alert('Element removed');
+          };
+          container3.appendChild(removeButton);
+        }
+      }
+
+      window.onload = insertElement(); // Trigger the insertion on page load
+    </script>
+  </head>
+  <body>
+    <div id="container">This is the container for the added element</div>
+    <div id="container2">This is the container for the added element</div>
+    <div id="container3">This is the container for the added element</div>
+  </body>
+</html>
